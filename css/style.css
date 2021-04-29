@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.main {
+    height: 100vh;
+    background: url(../bg.jpg) center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-child {
+    z-index: 10;
+    display: grid;
+    justify-items: center;
+}
+
+.main h1 {
+    font-size: 6.4rem;
+    max-width: 85rem;
+}
+
+.main span {
+    font-size: 2.6rem;
+    margin: 2rem;
+}
+
+.main p {
+    font-size: 1.9rem;
+    margin: 2rem;
+
+}
+
+.form-cta {
+    display: grid;
+    grid-template-columns: 50rem 21rem;
+}
+
+.form-cta input {
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+.form-cta button  {
+    color: white;
+    background-color: #e50914;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    text-transform: initial;
+}
+
+.form-cta button::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 2rem;
+    background: url(../seta.svg);
+    margin-left: 2rem;
+}
+
+.form-cta button:hover {
+    background: #f40612;
+}
+
+.gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8)100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
